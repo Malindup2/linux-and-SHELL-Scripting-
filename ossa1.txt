@@ -1,0 +1,24 @@
+//Program A
+int main()
+{
+pid_t pid;
+int I;
+ for(i=0;i<4;i++)
+	pid=fork();
+}
+
+//program B
+int value=30;
+int main()
+{
+	pid_t pid;
+	pid=fork();
+		if(pid==0)
+			value=value+25;
+		else if(pid>0){
+			value=value-25;
+			wait(NULL);
+			}
+printf("Value=%d\n",value);//Line A
+
+
