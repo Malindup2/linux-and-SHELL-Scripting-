@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h> // Include this for fork()
+#include <unistd.h> 
 
 int main() {
     printf("I am Parent\n");
@@ -7,6 +7,6 @@ int main() {
     fork();
     fork();
     printf("Hello World...!\n");
-    return 0; // Add a return statement
+    return 0; 
 }
 
